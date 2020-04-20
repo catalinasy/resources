@@ -6,8 +6,14 @@ export const Card = styled.div`
   padding: 1rem;
 `;
 
+export const SelectedCard = styled(Card)`
+  background: #E8F4F7;
+  border: solid 2px #20536F;
+`;
+
 export const Title = styled.p`
   font-weight: block;
+  cursor: pointer;
 `;
 
 export const Text = styled.p`

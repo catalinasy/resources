@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Table = styled.div`
-  width: 90%;
+  width: 100%;
+  margin: 0 1rem;
 `;
 
 export const Row = styled.div`
@@ -14,7 +15,7 @@ export const Row = styled.div`
 `;
 
 export const HeaderRow = styled(Row)`
-  border-bottom: gray solid 1px;
+  border-bottom: #7F7F7F solid 2px;
   padding-bottom: 0.2rem;
   height: 1.5rem;
 `;
@@ -38,6 +39,8 @@ export const TableHeader = styled(Column)`
 export const TableContainer = styled.div`
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 `;
 
 export const Img = styled.img`

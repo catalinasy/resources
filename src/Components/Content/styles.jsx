@@ -2,6 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
+  height: 94vh;
+  overflow: hidden;
 `;
 
 export const TabContainer = styled.div`
@@ -19,7 +21,7 @@ export const Title = styled.p`
 export const ResourceEligibilityContainer = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 2rem;
+  padding: 0 2rem;
 `;
 
 export const ResourceInformation = styled.div`
@@ -28,7 +30,7 @@ export const ResourceInformation = styled.div`
 `;
 
 export const StyledParagraph = styled.p`
-  margin: 0.5rem;
+  margin: 0.4rem;
   padding: 0;
 `;
 

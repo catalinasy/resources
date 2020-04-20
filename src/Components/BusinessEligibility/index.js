@@ -8,7 +8,8 @@ import businessStore from '../../state/business';
 import { Table, Row, TableContainer, Title, HeaderRow, Column, TableHeader, Img } from './styles';
 
 // assets
-import Checked from '../../utils/assets/icons8-checked-50.png';
+import Checked from '../../utils/assets/checked.svg';
+import notAvaliable from '../../utils/assets/x-mark.svg'
 
 // Components
 
@@ -40,7 +41,6 @@ const BusinessEligibility = ({ selectedResource }) => {
     setEligibility(eligibility);
   }, [eligibility, business, selectedResource]);
 
-  console.log(business);
 
   return (
     <TableContainer>
@@ -55,8 +55,7 @@ const BusinessEligibility = ({ selectedResource }) => {
           <Title>Deadline</Title>
           <Column></Column>
           <Column></Column>
-          {console.log(eligibility)}
-          <Column>{eligibility && <Img src={Checked} />}</Column>
+          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
         </Row>
         <Row>
           <Title>Location</Title>
@@ -65,7 +64,7 @@ const BusinessEligibility = ({ selectedResource }) => {
           <Column>
             {business.ds_addressline1}, {business.ds_city}, {business.ds_postalcode}
           </Column>
-          <Column>{eligibility && <Img src={Checked} />}</Column>
+          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
         </Row>
         <Row>
           <Title>Size</Title>
@@ -74,7 +73,7 @@ const BusinessEligibility = ({ selectedResource }) => {
             {selectedResource?.nr_sizemin} - {selectedResource?.nr_sizemax}
           </Column>
           <Column></Column>
-          <Column>{eligibility && <Img src={Checked} />}</Column>
+          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
         </Row>
         <Row>
           <Title>Revenue</Title>
@@ -82,21 +81,21 @@ const BusinessEligibility = ({ selectedResource }) => {
             ${selectedResource?.nr_revenuemin} - ${selectedResource?.nr_revenuemax}
           </Column>
           <Column>${business.nr_revenue || 0} </Column>
-          <Column>{eligibility && <Img src={Checked} />}</Column>
+          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
         </Row>
         <Row>
           <Title>Industry</Title>
 
           <Column>{selectedResource?.cd_industrytype}</Column>
           <Column></Column>
-          <Column>{eligibility && <Img src={Checked} />}</Column>
+          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
         </Row>
         <Row>
           <Title>Organization</Title>
 
           <Column></Column>
           <Column></Column>
-          <Column>{eligibility && <Img src={Checked} />}</Column>
+          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
         </Row>
       </Table>
     </TableContainer>

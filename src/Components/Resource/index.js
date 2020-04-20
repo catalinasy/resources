@@ -11,7 +11,7 @@ import { ResoruceList } from './styles';
 
 // index = container
 // container - dispatch // card - render
-const Resource = ({ setSelectedResource }) => {
+const Resource = ({ setSelectedResource, selectedResource }) => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(resourcesStore.actions.fetchAllResources.request());
@@ -41,6 +41,7 @@ const Resource = ({ setSelectedResource }) => {
             key={r.idResource}
             name={r.ds_name}
             description={r.ds_description}
+            isSelected={r.idResource === selectedResource?.idResource}
           />
         );
       })}

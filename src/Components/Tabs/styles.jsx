@@ -10,13 +10,10 @@ export const TabContainer = styled.div`
 `;
 
 export const StyledTab = styled.div`
-  margin: 0 1rem;
-  padding: 1rem;
+  padding: 1rem 1.5rem;
 `;
 
-export const SelectedTab = styled.div`
-  margin: 0 1rem;
-  color: #56bddf;
-  border-bottom: 2px solid #56bddf;
-  padding: 1rem;
+export const SelectedTab = styled(StyledTab)`
+  color: #63ACE4;
+  border-bottom: 2px solid #63ACE4;
 `;
