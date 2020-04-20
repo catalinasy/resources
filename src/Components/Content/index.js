@@ -19,7 +19,7 @@ import Tabs from '../Tabs';
 // import NavBar from '../NavBar';
 import BusinessEligibility from '../BusinessEligibility';
 
-import { thousands_separators } from '../../utils/helpers'
+import { thousandsSeparators } from '../../utils/helpers'
 
 export const Content = React.memo(() => {
   const [selectedResource, setSelectedResource] = useState();
@@ -55,8 +55,8 @@ export const Content = React.memo(() => {
               <DetailedLabel>desitionTime:</DetailedLabel> {selectedResource?.nr_timedecision}{' '}
             </StyledParagraph>
             <StyledParagraph>
-              <DetailedLabel>Amount: </DetailedLabel>${thousands_separators(selectedResource?.nr_amountmin) || 0} - $
-              {thousands_separators(selectedResource?.nr_amountmax)}
+              <DetailedLabel>Amount: </DetailedLabel>${thousandsSeparators(selectedResource?.nr_amountmin) || 0} - $
+              {thousandsSeparators(selectedResource?.nr_amountmax)}
             </StyledParagraph>
             <StyledParagraph>
               <DetailedLabel>Tax Layability:</DetailedLabel>
@@ -66,7 +66,7 @@ export const Content = React.memo(() => {
               <DetailedLabel>Loan Details:</DetailedLabel>
             </StyledParagraph>
             <StyledParagraph>
-              <DetailedLabel>Loan Amount: </DetailedLabel>up to ${thousands_separators(selectedResource?.nr_amountmax)}
+              <DetailedLabel>Loan Amount: </DetailedLabel>up to ${thousandsSeparators(selectedResource?.nr_amountmax)}
             </StyledParagraph>
             <StyledParagraph>
               <DetailedLabel>Term: </DetailedLabel>

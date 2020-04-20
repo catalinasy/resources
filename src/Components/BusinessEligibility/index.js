@@ -12,10 +12,9 @@ import { Table, Row, TableContainer, Title, HeaderRow, Column, TableHeader, Img 
 import Checked from '../../utils/assets/checked.svg';
 import notAvaliable from '../../utils/assets/x-mark.svg'
 
-// Components
+// Helpers
+import { thousandsSeparators } from '../../utils/helpers'
 
-// index = container
-// container - dispatch // card - render
 const BusinessEligibility = ({ selectedResource }) => {
   const dispatch = useDispatch();
   useEffect(() => {
@@ -79,9 +78,9 @@ const BusinessEligibility = ({ selectedResource }) => {
         <Row>
           <Title>Revenue</Title>
           <Column>
-            ${selectedResource?.nr_revenuemin} - ${selectedResource?.nr_revenuemax}
+            ${thousandsSeparators(selectedResource?.nr_revenuemin) || 0} - ${thousandsSeparators(selectedResource?.nr_revenuemax) || 0}
           </Column>
-          <Column>${business.nr_revenue || 0} </Column>
+          <Column>${thousandsSeparators(business.nr_revenue )|| 0} </Column>
           <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
         </Row>
         <Row>

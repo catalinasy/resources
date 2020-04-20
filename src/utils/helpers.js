@@ -1,4 +1,4 @@
-export function thousands_separators(num)
+export function thousandsSeparators(num)
   {
     if (num) {var num_parts = num.toString().split(".");
     num_parts[0] = num_parts[0].replace(/\B(?=(\d{3})+(?!\d))/g, ",");
