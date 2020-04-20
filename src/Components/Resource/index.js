@@ -1,5 +1,6 @@
 import React, { useEffect, useCallback, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import Proptypes from 'prop-types';
 
 // Store
 import resourcesStore from '../../state/resources';
@@ -48,5 +49,11 @@ const Resource = ({ setSelectedResource, selectedResource }) => {
     </ResoruceList>
   );
 };
+
+Resource.propTypes = {
+  setSelectedResource: Proptypes.func.isRequired,
+  selectedResource: Proptypes.object.isRequired,
+}
+
 
 export default Resource;

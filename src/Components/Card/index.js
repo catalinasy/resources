@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Card, Title, Text, SelectedCard } from './styles';
 
 const ResourceCard = ({ name, description, onClick, isSelected }) => {
@@ -15,5 +16,12 @@ const ResourceCard = ({ name, description, onClick, isSelected }) => {
     </>
   );
 };
+
+ResourceCard.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  isSelected: PropTypes.bool.isRequired,
+}
 
 export default ResourceCard;

@@ -1,5 +1,6 @@
 /* eslint-disable react/display-name */
 import React from 'react';
+import Proptypes from 'prop-types';
 
 // Styled components
 import { TabContainer, StyledTab, SelectedTab } from './styles';
@@ -24,5 +25,11 @@ export const Tabs = React.memo(({ setTab, tabs, selectedTab }) => {
     </TabContainer>
   );
 });
+
+Tabs.propTypes = {
+  setTab: Proptypes.func.isRequired,
+  tabs: Proptypes.array.isRequired,
+  selectedTab: Proptypes.number.isRequired,
+}
 
 export default Tabs;
