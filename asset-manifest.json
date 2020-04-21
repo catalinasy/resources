@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/catalinasy/resources/static/css/main.c745c75f.chunk.css",
-    "main.js": "/catalinasy/resources/static/js/main.60dcf4b0.chunk.js",
-    "main.js.map": "/catalinasy/resources/static/js/main.60dcf4b0.chunk.js.map",
+    "main.js": "/catalinasy/resources/static/js/main.bd18ee8c.chunk.js",
+    "main.js.map": "/catalinasy/resources/static/js/main.bd18ee8c.chunk.js.map",
     "runtime-main.js": "/catalinasy/resources/static/js/runtime-main.4c540066.js",
     "runtime-main.js.map": "/catalinasy/resources/static/js/runtime-main.4c540066.js.map",
     "static/js/2.8259f7b1.chunk.js": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js",
     "static/js/2.8259f7b1.chunk.js.map": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js.map",
     "index.html": "/catalinasy/resources/index.html",
-    "precache-manifest.206211b4d15a5aa3ffb90a87ca23bd9f.js": "/catalinasy/resources/precache-manifest.206211b4d15a5aa3ffb90a87ca23bd9f.js",
+    "precache-manifest.0e20fcaac0947b7994a83f0aa4b94070.js": "/catalinasy/resources/precache-manifest.0e20fcaac0947b7994a83f0aa4b94070.js",
     "service-worker.js": "/catalinasy/resources/service-worker.js",
     "static/css/main.c745c75f.chunk.css.map": "/catalinasy/resources/static/css/main.c745c75f.chunk.css.map",
     "static/js/2.8259f7b1.chunk.js.LICENSE.txt": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js.LICENSE.txt",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.4c540066.js",
     "static/js/2.8259f7b1.chunk.js",
     "static/css/main.c745c75f.chunk.css",
-    "static/js/main.60dcf4b0.chunk.js"
+    "static/js/main.bd18ee8c.chunk.js"
   ]
 }

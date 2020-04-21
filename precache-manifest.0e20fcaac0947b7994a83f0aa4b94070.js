@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b347cfb62e742e1967a3978be5f04a4",
+    "revision": "7e2b6883c09046d634c9691e1c4e34dc",
     "url": "/catalinasy/resources/index.html"
   },
   {
-    "revision": "b514e83f0e33aee43488",
+    "revision": "30a0e9aa3658c0eda33c",
     "url": "/catalinasy/resources/static/css/main.c745c75f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b514e83f0e33aee43488",
-    "url": "/catalinasy/resources/static/js/main.60dcf4b0.chunk.js"
+    "revision": "30a0e9aa3658c0eda33c",
+    "url": "/catalinasy/resources/static/js/main.bd18ee8c.chunk.js"
   },
   {
     "revision": "4d936fca2fad4cc4173a",
