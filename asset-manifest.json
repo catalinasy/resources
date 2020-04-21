@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/catalinasy/resources/static/css/main.c745c75f.chunk.css",
-    "main.js": "/catalinasy/resources/static/js/main.bd18ee8c.chunk.js",
-    "main.js.map": "/catalinasy/resources/static/js/main.bd18ee8c.chunk.js.map",
-    "runtime-main.js": "/catalinasy/resources/static/js/runtime-main.4c540066.js",
-    "runtime-main.js.map": "/catalinasy/resources/static/js/runtime-main.4c540066.js.map",
-    "static/js/2.8259f7b1.chunk.js": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js",
-    "static/js/2.8259f7b1.chunk.js.map": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js.map",
-    "index.html": "/catalinasy/resources/index.html",
-    "precache-manifest.0e20fcaac0947b7994a83f0aa4b94070.js": "/catalinasy/resources/precache-manifest.0e20fcaac0947b7994a83f0aa4b94070.js",
-    "service-worker.js": "/catalinasy/resources/service-worker.js",
-    "static/css/main.c745c75f.chunk.css.map": "/catalinasy/resources/static/css/main.c745c75f.chunk.css.map",
-    "static/js/2.8259f7b1.chunk.js.LICENSE.txt": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js.LICENSE.txt",
-    "static/media/chat.svg": "/catalinasy/resources/static/media/chat.220d4209.svg",
-    "static/media/checked white.svg": "/catalinasy/resources/static/media/checked white.931496ab.svg",
-    "static/media/checked.svg": "/catalinasy/resources/static/media/checked.b4382582.svg",
-    "static/media/loupe.svg": "/catalinasy/resources/static/media/loupe.26968d46.svg",
-    "static/media/x-mark.svg": "/catalinasy/resources/static/media/x-mark.746b8b6b.svg"
+    "main.css": "/resources/static/css/main.c745c75f.chunk.css",
+    "main.js": "/resources/static/js/main.12774f11.chunk.js",
+    "main.js.map": "/resources/static/js/main.12774f11.chunk.js.map",
+    "runtime-main.js": "/resources/static/js/runtime-main.35cb7ce6.js",
+    "runtime-main.js.map": "/resources/static/js/runtime-main.35cb7ce6.js.map",
+    "static/js/2.4d6f0375.chunk.js": "/resources/static/js/2.4d6f0375.chunk.js",
+    "static/js/2.4d6f0375.chunk.js.map": "/resources/static/js/2.4d6f0375.chunk.js.map",
+    "index.html": "/resources/index.html",
+    "precache-manifest.ec2f331f0300ff0073a3a5a915137f9e.js": "/resources/precache-manifest.ec2f331f0300ff0073a3a5a915137f9e.js",
+    "service-worker.js": "/resources/service-worker.js",
+    "static/css/main.c745c75f.chunk.css.map": "/resources/static/css/main.c745c75f.chunk.css.map",
+    "static/js/2.4d6f0375.chunk.js.LICENSE.txt": "/resources/static/js/2.4d6f0375.chunk.js.LICENSE.txt",
+    "static/media/chat.svg": "/resources/static/media/chat.220d4209.svg",
+    "static/media/checked white.svg": "/resources/static/media/checked white.931496ab.svg",
+    "static/media/checked.svg": "/resources/static/media/checked.b4382582.svg",
+    "static/media/loupe.svg": "/resources/static/media/loupe.26968d46.svg",
+    "static/media/x-mark.svg": "/resources/static/media/x-mark.746b8b6b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4c540066.js",
-    "static/js/2.8259f7b1.chunk.js",
+    "static/js/runtime-main.35cb7ce6.js",
+    "static/js/2.4d6f0375.chunk.js",
     "static/css/main.c745c75f.chunk.css",
-    "static/js/main.bd18ee8c.chunk.js"
+    "static/js/main.12774f11.chunk.js"
   ]
 }
