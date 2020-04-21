@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/static/css/main.c745c75f.chunk.css",
-    "main.js": "/static/js/main.856591a7.chunk.js",
-    "main.js.map": "/static/js/main.856591a7.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a9c27bb6.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a9c27bb6.js.map",
-    "static/js/2.615c7576.chunk.js": "/static/js/2.615c7576.chunk.js",
-    "static/js/2.615c7576.chunk.js.map": "/static/js/2.615c7576.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.f37d6a789260139fca5e2423fe07ec3b.js": "/precache-manifest.f37d6a789260139fca5e2423fe07ec3b.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/main.c745c75f.chunk.css.map": "/static/css/main.c745c75f.chunk.css.map",
-    "static/js/2.615c7576.chunk.js.LICENSE.txt": "/static/js/2.615c7576.chunk.js.LICENSE.txt",
-    "static/media/chat.svg": "/static/media/chat.220d4209.svg",
-    "static/media/checked white.svg": "/static/media/checked white.931496ab.svg",
-    "static/media/checked.svg": "/static/media/checked.b4382582.svg",
-    "static/media/loupe.svg": "/static/media/loupe.26968d46.svg",
-    "static/media/x-mark.svg": "/static/media/x-mark.746b8b6b.svg"
+    "main.css": "/catalinasy/resources/static/css/main.c745c75f.chunk.css",
+    "main.js": "/catalinasy/resources/static/js/main.60dcf4b0.chunk.js",
+    "main.js.map": "/catalinasy/resources/static/js/main.60dcf4b0.chunk.js.map",
+    "runtime-main.js": "/catalinasy/resources/static/js/runtime-main.4c540066.js",
+    "runtime-main.js.map": "/catalinasy/resources/static/js/runtime-main.4c540066.js.map",
+    "static/js/2.8259f7b1.chunk.js": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js",
+    "static/js/2.8259f7b1.chunk.js.map": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js.map",
+    "index.html": "/catalinasy/resources/index.html",
+    "precache-manifest.206211b4d15a5aa3ffb90a87ca23bd9f.js": "/catalinasy/resources/precache-manifest.206211b4d15a5aa3ffb90a87ca23bd9f.js",
+    "service-worker.js": "/catalinasy/resources/service-worker.js",
+    "static/css/main.c745c75f.chunk.css.map": "/catalinasy/resources/static/css/main.c745c75f.chunk.css.map",
+    "static/js/2.8259f7b1.chunk.js.LICENSE.txt": "/catalinasy/resources/static/js/2.8259f7b1.chunk.js.LICENSE.txt",
+    "static/media/chat.svg": "/catalinasy/resources/static/media/chat.220d4209.svg",
+    "static/media/checked white.svg": "/catalinasy/resources/static/media/checked white.931496ab.svg",
+    "static/media/checked.svg": "/catalinasy/resources/static/media/checked.b4382582.svg",
+    "static/media/loupe.svg": "/catalinasy/resources/static/media/loupe.26968d46.svg",
+    "static/media/x-mark.svg": "/catalinasy/resources/static/media/x-mark.746b8b6b.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.a9c27bb6.js",
-    "static/js/2.615c7576.chunk.js",
+    "static/js/runtime-main.4c540066.js",
+    "static/js/2.8259f7b1.chunk.js",
     "static/css/main.c745c75f.chunk.css",
-    "static/js/main.856591a7.chunk.js"
+    "static/js/main.60dcf4b0.chunk.js"
   ]
 }
