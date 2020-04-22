@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   display: flex;
@@ -39,10 +39,8 @@ export const DetailedLabel = styled.span`
 `;
 
 export const LabelContainer = styled.div`
-  width: 7rem;
   display: flex;
-  justify-content: space-between;
-
+  justify-content: flex-start;
 `;
 
 export const Label = styled.span`
@@ -51,15 +49,16 @@ export const Label = styled.span`
   justify-content: center;
   font-weight: bolder;
   margin: 0.5rem 0;
-  border-radius: 15%;
+  border-radius: 12%;
   padding: 0.5rem;
 `;
 
 export const LabelGreen = styled(Label)`
-  background: #94F74C;
-  
-`
+  background: #94f74c;
+  margin-left: 0.5rem;
+`;
 
 export const LabelYellow = styled(Label)`
-  background: #FAE64D;
+  background: #fae64d;
+  margin-right: 0.5rem;
 `;

@@ -1,9 +1,9 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Nav = styled.div`
   margin: 0;
   height: 100vh;
-  background: #20536F;
+  background: #20536f;
   display: flex;
   flex-direction: column;
   width: 5vw;
@@ -22,5 +22,5 @@ export const ImgContainer = styled.div`
 `;
 
 export const SelectedImageContainer = styled(ImgContainer)`
-  background: #469CB6;
+  background: #469cb6;
 `;

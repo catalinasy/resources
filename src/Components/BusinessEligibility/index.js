@@ -1,22 +1,30 @@
-import React, { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
-import PropTypes from 'prop-types';
+import React, { useEffect, useState } from "react";
+import { useSelector } from "react-redux";
+import PropTypes from "prop-types";
 
 // Store
-import businessStore from '../../state/business';
+import businessStore from "../../state/business";
 
 // Styled components
-import { Table, Row, TableContainer, Title, HeaderRow, Column, TableHeader, Img } from './styles';
+import {
+  Table,
+  Row,
+  TableContainer,
+  Title,
+  HeaderRow,
+  Column,
+  TableHeader,
+  Img,
+} from "./styles";
 
 // assets
-import Checked from '../../utils/assets/checked.svg';
-import notAvaliable from '../../utils/assets/x-mark.svg'
+import Checked from "../../utils/assets/checked.svg";
+import notAvaliable from "../../utils/assets/x-mark.svg";
 
 // Helpers
-import { thousandsSeparators } from '../../utils/helpers'
+import { thousandsSeparators } from "../../utils/helpers";
 
 const BusinessEligibility = ({ selectedResource }) => {
-
   const { business } = useSelector(businessStore.selector.selectBusiness);
   const [eligibility, setEligibility] = useState(false);
 
@@ -37,7 +45,6 @@ const BusinessEligibility = ({ selectedResource }) => {
     setEligibility(eligibility);
   }, [eligibility, business, selectedResource]);
 
-
   return (
     <TableContainer>
       <Table>
@@ -51,16 +58,21 @@ const BusinessEligibility = ({ selectedResource }) => {
           <Title>Deadline</Title>
           <Column></Column>
           <Column></Column>
-          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
+          <Column>
+            {eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} />}
+          </Column>
         </Row>
         <Row>
           <Title>Location</Title>
 
           <Column></Column>
           <Column>
-            {business.ds_addressline1}, {business.ds_city}, {business.ds_postalcode}
+            {business.ds_addressline1}, {business.ds_city},{" "}
+            {business.ds_postalcode}
           </Column>
-          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
+          <Column>
+            {eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} />}
+          </Column>
         </Row>
         <Row>
           <Title>Size</Title>
@@ -69,29 +81,38 @@ const BusinessEligibility = ({ selectedResource }) => {
             {selectedResource?.nr_sizemin} - {selectedResource?.nr_sizemax}
           </Column>
           <Column></Column>
-          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
+          <Column>
+            {eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} />}
+          </Column>
         </Row>
         <Row>
           <Title>Revenue</Title>
           <Column>
-            ${thousandsSeparators(selectedResource?.nr_revenuemin) || 0} - ${thousandsSeparators(selectedResource?.nr_revenuemax) || 0}
+            ${thousandsSeparators(selectedResource?.nr_revenuemin) || 0} - $
+            {thousandsSeparators(selectedResource?.nr_revenuemax) || 0}
           </Column>
-          <Column>${thousandsSeparators(business.nr_revenue )|| 0} </Column>
-          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
+          <Column>${thousandsSeparators(business.nr_revenue) || 0} </Column>
+          <Column>
+            {eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} />}
+          </Column>
         </Row>
         <Row>
           <Title>Industry</Title>
 
           <Column>{selectedResource?.cd_industrytype}</Column>
           <Column></Column>
-          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
+          <Column>
+            {eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} />}
+          </Column>
         </Row>
         <Row>
           <Title>Organization</Title>
 
           <Column></Column>
           <Column></Column>
-          <Column>{eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} /> }</Column>
+          <Column>
+            {eligibility ? <Img src={Checked} /> : <Img src={notAvaliable} />}
+          </Column>
         </Row>
       </Table>
     </TableContainer>

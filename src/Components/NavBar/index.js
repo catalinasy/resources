@@ -1,14 +1,14 @@
-import React from 'react';
-import { Nav, Img, ImgContainer, SelectedImageContainer } from './styles';
-import Search from '../../utils/assets/loupe.svg';
-import Checked from '../../utils/assets/checked white.svg';
-import Chat from '../../utils/assets/chat.svg';
+import React from "react";
+import { Nav, Img, ImgContainer, SelectedImageContainer } from "./styles";
+import Search from "../../utils/assets/loupe.svg";
+import Checked from "../../utils/assets/checked white.svg";
+import Chat from "../../utils/assets/chat.svg";
 
 const NavBar = () => {
   return (
     <Nav>
       <ImgContainer>
-        <Img src={Checked} />   
+        <Img src={Checked} />
       </ImgContainer>
       <SelectedImageContainer>
         <Img src={Search} />
@@ -16,7 +16,6 @@ const NavBar = () => {
       <ImgContainer>
         <Img src={Chat} />
       </ImgContainer>
-
     </Nav>
   );
 };

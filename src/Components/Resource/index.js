@@ -1,17 +1,16 @@
-import React, { useEffect, useCallback, useState } from 'react';
-import { useSelector } from 'react-redux';
-import Proptypes from 'prop-types';
+import React, { useEffect, useCallback, useState } from "react";
+import { useSelector } from "react-redux";
+import Proptypes from "prop-types";
 
 // Store
-import resourcesStore from '../../state/resources';
+import resourcesStore from "../../state/resources";
 
 // Components
-import ResourceCard from '../Card';
+import ResourceCard from "../Card";
 
-import { ResoruceList } from './styles';
+import { ResoruceList } from "./styles";
 
 const Resource = ({ setSelectedResource, selectedResource }) => {
-
   const { resources } = useSelector(resourcesStore.selector.selectAll);
   const [resourceSelected, setResourceSelected] = useState(false);
 
@@ -24,7 +23,7 @@ const Resource = ({ setSelectedResource, selectedResource }) => {
       setResourceSelected(true);
       setSelectedResource(resource);
     },
-    [setSelectedResource],
+    [setSelectedResource]
   );
 
   return (
@@ -47,7 +46,6 @@ const Resource = ({ setSelectedResource, selectedResource }) => {
 Resource.propTypes = {
   setSelectedResource: Proptypes.func.isRequired,
   selectedResource: Proptypes.object.isRequired,
-}
-
+};
 
 export default Resource;

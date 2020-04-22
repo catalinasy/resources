@@ -1,4 +1,4 @@
-import { actions } from './resources.actions';
+import { actions } from "./resources.actions";
 
 const INITIAL_STATE = {
   isFetching: false,

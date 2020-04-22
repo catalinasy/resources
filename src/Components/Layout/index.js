@@ -1,21 +1,20 @@
 /* eslint-disable react/display-name */
-import React, { useEffect } from 'react';
-import { useSelector, useDispatch } from 'react-redux';
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 
 // Styled components
-import { LayoutContainer, Title } from './styles';
+import { LayoutContainer, Title } from "./styles";
 
 // Store
-import businessStore from '../../state/business';
-import resourcesStore from '../../state/resources';
+import businessStore from "../../state/business";
+import resourcesStore from "../../state/resources";
 
 // components
-import NavBar from '../NavBar';
-import Content from '../Content';
-import LoadingComponent from '../LoadingComponent';
+import NavBar from "../NavBar";
+import Content from "../Content";
+import LoadingComponent from "../LoadingComponent";
 
 export const Layout = React.memo(() => {
-
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -28,17 +27,17 @@ export const Layout = React.memo(() => {
 
   return (
     <LayoutContainer>
-      {resourcesLoading || businessLoading ? <LoadingComponent/> :
-    <>
-    <NavBar />
-       <main>
-       <Title>Resources</Title>
-       <Content />
-     </main>
-    </>  
-    
-      }
-      
+      {resourcesLoading || businessLoading ? (
+        <LoadingComponent />
+      ) : (
+        <>
+          <NavBar />
+          <main>
+            <Title>Resources</Title>
+            <Content />
+          </main>
+        </>
+      )}
     </LayoutContainer>
   );
 });

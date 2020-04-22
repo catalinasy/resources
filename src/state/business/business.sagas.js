@@ -1,15 +1,12 @@
-import { call, takeLatest, put } from 'redux-saga/effects';
-
+import { call, takeLatest, put } from "redux-saga/effects";
+import { businessURL } from '../../utils/constants';
 // API
-import axios from 'axios';
+import axios from "axios";
 
 // Actions
-import { actions, fetchBusiness } from './business.actions';
+import { actions, fetchBusiness } from "./business.actions";
 
-const resourcesURL =
-  'https://forward.livestories.com/api/business?filter={"where":{"idBusiness":{"eq":102}},"include":[{"relation":"eligibilities","scope":{"include":[{"relation":"idResource"}]}}]}';
-
-const fetchById = async () => await axios.get(`${resourcesURL}`, {});
+const fetchById = async () => await axios.get(`${businessURL}`, {});
 
 function* businessRequest() {
   try {
@@ -17,10 +14,10 @@ function* businessRequest() {
     if (result && result.data) {
       return yield put(fetchBusiness.success(result.data));
     }
-    return yield put(fetchBusiness.failure('Unknown Error'));
+    return yield put(fetchBusiness.failure("Unknown Error"));
   } catch ({ response: { data }, message }) {
     if (data) {
-      const error = typeof data === 'string' ? data : data.code;
+      const error = typeof data === "string" ? data : data.code;
       return yield put(fetchBusiness.failure(error));
     }
     return yield put(fetchBusiness.failure(message));

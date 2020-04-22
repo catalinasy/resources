@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const TabContainer = styled.div`
   width: 100%;
@@ -14,6 +14,6 @@ export const StyledTab = styled.div`
 `;
 
 export const SelectedTab = styled(StyledTab)`
-  color: #63ACE4;
-  border-bottom: 2px solid #63ACE4;
+  color: #63ace4;
+  border-bottom: 2px solid #63ace4;
 `;

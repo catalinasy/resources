@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Card = styled.div`
   background: #f8fafc;
@@ -8,8 +8,8 @@ export const Card = styled.div`
 `;
 
 export const SelectedCard = styled(Card)`
-  background: #E8F4F7;
-  border: solid 2px #20536F;
+  background: #e8f4f7;
+  border: solid 2px #20536f;
 `;
 
 export const Title = styled.p`

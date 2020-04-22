@@ -1,10 +1,10 @@
-import React from 'react';
-import { Spinner, LoadingContainer } from './styles';
+import React from "react";
+import { Spinner, LoadingContainer } from "./styles";
 
-const LoadingComponent = ({ name, description, onClick, isSelected }) => {
+const LoadingComponent = () => {
   return (
     <LoadingContainer>
-        <Spinner/>
+      <Spinner />
     </LoadingContainer>
   );
 };
