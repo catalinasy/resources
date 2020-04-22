@@ -1,5 +1,5 @@
 import React, { useEffect, useCallback, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import Proptypes from 'prop-types';
 
 // Store
@@ -10,20 +10,14 @@ import ResourceCard from '../Card';
 
 import { ResoruceList } from './styles';
 
-// index = container
-// container - dispatch // card - render
 const Resource = ({ setSelectedResource, selectedResource }) => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(resourcesStore.actions.fetchAllResources.request());
-  }, []);
 
   const { resources } = useSelector(resourcesStore.selector.selectAll);
   const [resourceSelected, setResourceSelected] = useState(false);
 
   useEffect(() => {
     if (!resourceSelected) setSelectedResource(resources[0]);
-  }, [resources, setSelectedResource]);
+  }, [resources, setSelectedResource, resourceSelected]);
 
   const handleClick = useCallback(
     (event, resource) => {

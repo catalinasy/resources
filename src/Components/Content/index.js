@@ -1,5 +1,5 @@
 /* eslint-disable react/display-name */
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 // Styled components
 import {
@@ -10,6 +10,9 @@ import {
   ResourceInformation,
   StyledParagraph,
   DetailedLabel,
+  LabelContainer,
+  LabelGreen,
+  LabelYellow,
 } from './styles';
 
 // components
@@ -44,6 +47,11 @@ export const Content = React.memo(() => {
       <Resource setSelectedResource={setSelectedResource} selectedResource={selectedResource} />
       <TabContainer>
         <ResourceEligibilityContainer>
+        <LabelContainer>
+          {console.log(selectedResource)}
+  <LabelYellow>{selectedResource?.resourcetype?.ds_name}</LabelYellow>
+  <LabelGreen>{selectedResource?.resourcescope?.ds_name}</LabelGreen>
+        </LabelContainer>
           <Title>{selectedResource?.ds_name || 'Selected Resource Name'}</Title>
           <ResourceInformation>
             <StyledParagraph>

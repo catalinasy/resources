@@ -37,3 +37,29 @@ export const StyledParagraph = styled.p`
 export const DetailedLabel = styled.span`
   font-weight: bold;
 `;
+
+export const LabelContainer = styled.div`
+  width: 7rem;
+  display: flex;
+  justify-content: space-between;
+
+`;
+
+export const Label = styled.span`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bolder;
+  margin: 0.5rem 0;
+  border-radius: 15%;
+  padding: 0.5rem;
+`;
+
+export const LabelGreen = styled(Label)`
+  background: #94F74C;
+  
+`
+
+export const LabelYellow = styled(Label)`
+  background: #FAE64D;
+`;

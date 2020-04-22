@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 
 // Store
@@ -16,10 +16,6 @@ import notAvaliable from '../../utils/assets/x-mark.svg'
 import { thousandsSeparators } from '../../utils/helpers'
 
 const BusinessEligibility = ({ selectedResource }) => {
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch(businessStore.actions.fetchBusiness.request());
-  }, []);
 
   const { business } = useSelector(businessStore.selector.selectBusiness);
   const [eligibility, setEligibility] = useState(false);
@@ -103,7 +99,11 @@ const BusinessEligibility = ({ selectedResource }) => {
 };
 
 BusinessEligibility.propTypes = {
-  selectedResource: PropTypes.object.isRequired,
+  selectedResource: PropTypes.object,
+};
+
+BusinessEligibility.defaultProps = {
+  selectedResource: null,
 };
 
 export default BusinessEligibility;

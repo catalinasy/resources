@@ -7,7 +7,7 @@ import axios from 'axios';
 import { actions, fetchAllResources } from './resources.actions';
 
 const resourcesURL =
-  'https://forward.livestories.com/api/resource?filter":"\\{"include": \\[\\{"relation":"resourcetype" \\}, \\{"relation":"resourcescope" \\}\\]\\}';
+'https://forward.livestories.com/api/resource?filter={"include": [{"relation":"resourcetype" }, {"relation":"resourcescope" }]}';
 
 const fetchList = async () => await axios.get(`${resourcesURL}`, {});
 

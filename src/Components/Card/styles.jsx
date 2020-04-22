@@ -4,6 +4,7 @@ export const Card = styled.div`
   background: #f8fafc;
   border: #d3d7d8 solid 1px;
   padding: 1rem;
+  cursor: pointer;
 `;
 
 export const SelectedCard = styled(Card)`
@@ -13,7 +14,6 @@ export const SelectedCard = styled(Card)`
 
 export const Title = styled.p`
   font-weight: block;
-  cursor: pointer;
 `;
 
 export const Text = styled.p`
